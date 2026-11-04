@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ignishun Tech & Services</title>
+<meta name="description" content="Ignishun Tech builds websites, manages social media, runs digital marketing & advertising, and connects you with influencers. Everything your brand needs, end to end.">
+<link rel="icon" type="image/png" href="assets/ignilogo_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="navbar__brand">
+      <img src="assets/ignilogo_dark.png" alt="Ignishun Tech" class="navbar__logo">
+    </a>
+
+    <nav class="navbar__nav" id="primaryNav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary btn--sm navbar__cta">Get Started</a>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow">Full-Service Digital Growth Agency</p>
+        <h1>We build brands that <span class="text-accent">get noticed.</span></h1>
+        <p class="hero__lead">
+          Websites, social media management, digital marketing &amp; advertising, influencer
+          marketing.<br>
+          <strong class="hero__brand-mark">Ignishun</strong> handles your entire digital presence, end to end, so you can
+          focus on running your business.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Start Your Project</a>
+          <a href="#work" class="btn btn--ghost">View Our Work</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat"><span class="stat__num">4+</span><span class="stat__label">Core Services</span></div>
+          <div class="stat"><span class="stat__num">100%</span><span class="stat__label">End-to-End Support</span></div>
+          <div class="stat"><span class="stat__num">24/7</span><span class="stat__label">Brand Monitoring</span></div>
+        </div>
+      </div>
+      <div class="hero__media">
+        <!-- Live campaign card: script.js cycles the channels; figures match the Work section. -->
+        <div class="hero__chart live-chart" id="liveChart">
+          <div class="live-chart__head">
+            <span class="live-chart__status"><span class="live-chart__status-dot"></span>Sample results</span>
+            <div class="live-chart__tabs" role="tablist" aria-label="Channel">
+              <button type="button" role="tab" class="live-chart__tab" aria-selected="true">Social</button>
+              <button type="button" role="tab" class="live-chart__tab" aria-selected="false">Paid Ads</button>
+              <button type="button" role="tab" class="live-chart__tab" aria-selected="false">Influencer</button>
+            </div>
+          </div>
+          <div class="live-chart__metric">
+            <span class="live-chart__num" id="liveNum">3×</span>
+            <span class="live-chart__label" id="liveLabel">Monthly engagement<br><small>Instagram growth campaign</small></span>
+          </div>
+          <div class="live-chart__plot">
+            <svg viewBox="0 0 640 300" preserveAspectRatio="none" role="img" id="liveSvg" aria-label="Monthly engagement tripling over six months">
+              <defs>
+                <linearGradient id="growthFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#3fd6e6" stop-opacity="0.38"/>
+                  <stop offset="100%" stop-color="#17A2B8" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g stroke="rgba(255,255,255,0.08)" stroke-width="1" vector-effect="non-scaling-stroke">
+                <line x1="0" y1="60" x2="640" y2="60"/>
+                <line x1="0" y1="140" x2="640" y2="140"/>
+                <line x1="0" y1="220" x2="640" y2="220"/>
+              </g>
+              <path id="liveArea" fill="url(#growthFill)"/>
+              <line id="liveNow" stroke="rgba(63,214,230,0.45)" stroke-width="1" stroke-dasharray="3 4" vector-effect="non-scaling-stroke"/>
+              <path id="liveLine" fill="none" stroke="#3fd6e6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" class="chart-line"/>
+            </svg>
+            <span class="live-chart__head-dot" id="liveDot"></span>
+          </div>
+        </div>
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Trusted growth partner
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos / trust strip -->
+  <section class="trust-strip">
+    <div class="container trust-strip__inner">
+      <p>What we do, all under one roof</p>
+      <div class="marquee">
+        <div class="marquee__track">
+          <div class="trust-strip__tags">
+            <span>Web Design</span>
+            <span>Development</span>
+            <span>Social Media</span>
+            <span>Paid Ads</span>
+            <span>SEO</span>
+            <span>Influencer Marketing</span>
+            <span>Branding</span>
+          </div>
+          <div class="trust-strip__tags" aria-hidden="true">
+            <span>Web Design</span>
+            <span>Development</span>
+            <span>Social Media</span>
+            <span>Paid Ads</span>
+            <span>SEO</span>
+            <span>Influencer Marketing</span>
+            <span>Branding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Services</p>
+        <h2>Everything your brand needs, <em>end to end</em></h2>
+        <p class="section__sub">No juggling five agencies. We plan, build, launch and grow your entire online presence under one roof.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9z"/></svg>
+          </div>
+          <h3>Web Design &amp; Development</h3>
+          <p>Custom, responsive websites that load fast, look great on every device, and are built to convert visitors into customers.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 8a3 3 0 1 0-2.83-4H14.2A3 3 0 1 0 7 8c0 .35.06.68.15 1L6 10.83A3 3 0 1 0 8 16c.35 0 .68-.06 1-.15l6 3.15a3 3 0 1 0 .9-1.8l-6-3.15c.06-.34.1-.69.1-1.05s-.04-.71-.1-1.05l6-3.15c.29.09.62.15.99.15"/></svg>
+          </div>
+          <h3>Social Media Management</h3>
+          <p>Content calendars, daily posting, community engagement and platform strategy that keeps your audience active and growing.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11v2a2 2 0 0 0 2 2h1l3 5V4L6 9H5a2 2 0 0 0-2 2z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </div>
+          <h3>Digital Marketing &amp; Advertising</h3>
+          <p>Data-driven paid search, social ads and performance campaigns engineered to lower your cost per acquisition and scale.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="14" height="11" rx="2"/><path d="M17 10l4-3v10l-4-3"/></svg>
+          </div>
+          <h3>Influencer Marketing</h3>
+          <p>Creator partnerships and campaign management that put your brand in front of the right audience, authentically.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3a6 6 0 0 0 0 12 3 3 0 0 1 0 6M9 10h.01M15 8h.01M15.5 13h.01"/></svg>
+          </div>
+          <h3>Branding &amp; Creative</h3>
+          <p>Logos, brand identity, and creative assets that give your business a consistent, recognizable look everywhere.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </div>
+          <h3>SEO &amp; Content Strategy</h3>
+          <p>Rank higher on search, get found by the right people, and stay relevant with a content strategy that compounds over time.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">How We Work</p>
+        <h2>A simple process, built for <em>results</em></h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="process-step__num">01</span>
+          <h3>Discover</h3>
+          <p>We learn your business, audience and goals before writing a single line of strategy.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">02</span>
+          <h3>Strategy</h3>
+          <p>A tailored plan across web, social, ads and influencer channels, built around your budget.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">03</span>
+          <h3>Execute</h3>
+          <p>Our team designs, builds, posts and runs campaigns while you stay focused on your business.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">04</span>
+          <h3>Grow</h3>
+          <p>We track, report and optimize continuously, so results compound month over month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Our Work</p>
+        <h2>Recent projects &amp; <em>campaigns</em></h2>
+        <p class="section__sub">A snapshot of the kind of work we love doing. Sample projects shown. Ask us for full case studies.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-card__media"><img class="work-card__visual" src="assets/ecom.png" alt="ShopStyle e-commerce website shown on laptop and phone screens with faster load times and higher conversion rate callouts" loading="lazy"></div>
+          <div class="work-card__body">
+            <span class="tag">Web Design</span>
+            <h3>E-commerce Website Revamp</h3>
+            <p>A full redesign and rebuild that improved conversion rate and page speed.</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__media"><img class="work-card__visual" src="assets/socmed.png" alt="Instagram post mockup with monthly engagement stats showing a 3x increase in likes, comments and shares" loading="lazy"></div>
+          <div class="work-card__body">
+            <span class="tag">Social Media</span>
+            <h3>Instagram Growth Campaign</h3>
+            <p>Consistent content and community management that tripled monthly engagement.</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__media"><img class="work-card__visual" src="assets/mkt.png" alt="Ad performance dashboard across Facebook, Instagram, Google and YouTube showing a 30% drop in cost per lead" loading="lazy"></div>
+          <div class="work-card__body">
+            <span class="tag">Paid Ads</span>
+            <h3>Performance Ad Rollout</h3>
+            <p>A multi-platform ad campaign that lowered cost-per-lead by over 30%.</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__media"><img class="work-card__visual" src="assets/creatorpart.png" alt="Creator partnership campaign across TikTok, Instagram and YouTube showing 1.8M total reach and 12.3K product sales" loading="lazy"></div>
+          <div class="work-card__body">
+            <span class="tag">Influencer Marketing</span>
+            <h3>Creator Partnership Launch</h3>
+            <p>A coordinated influencer push that introduced a new product to the right audience.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section--alt about">
+    <div class="container about__inner">
+      <div class="about__media">
+        <img class="about__mark" src="assets/agency.png" alt="A central hub connected to Instagram, Google Ads, Meta Ads and YouTube, with reach, engagement and lead-growth stats for each channel" loading="lazy">
+      </div>
+      <div class="about__content">
+        <p class="eyebrow">About Us</p>
+        <h2>One agency. Every channel. <em>Zero hand-offs.</em></h2>
+        <p class="section__sub">
+          Ignishun Tech was built on a simple idea: growing a brand online shouldn't mean
+          managing five different vendors. Our team of designers, developers, marketers and
+          creative strategists works together under one roof, so your website, socials, ads and
+          influencer campaigns all move in the same direction.
+        </p>
+        <ul class="about__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17A2B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Dedicated team across design, dev &amp; marketing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17A2B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Transparent reporting on every campaign</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17A2B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Flexible packages for startups to growing brands</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#17A2B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>One point of contact for your entire digital presence</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What clients say about <em>working with us</em></h2>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>Ignishun Tech rebuilt our website and took over our socials in the same month, and our online enquiries have never been higher.</p>
+          <div class="testimonial-card__person">
+            <div class="avatar-badge" aria-hidden="true">AV</div>
+            <div>
+              <strong>Aisha Verma</strong>
+              <span>Founder, sample client</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <p>Finally an agency that handles everything end to end. No more juggling five different freelancers for one campaign.</p>
+          <div class="testimonial-card__person">
+            <div class="avatar-badge" aria-hidden="true">RM</div>
+            <div>
+              <strong>Rohan Malhotra</strong>
+              <span>Marketing Lead, sample client</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card">
+          <p>The influencer campaign they ran for our launch outperformed every projection we had. Communication was excellent throughout.</p>
+          <div class="testimonial-card__person">
+            <div class="avatar-badge" aria-hidden="true">SK</div>
+            <div>
+              <strong>Sara Khan</strong>
+              <span>Co-founder, sample client</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <h2>Ready to grow your brand, <em>end to end?</em></h2>
+      <p>Tell us about your project and we'll get back to you within one business day.</p>
+      <a href="#contact" class="btn btn--primary">Let's Talk</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something <em>together</em></h2>
+        <p class="section__sub">Reach out with a few details about your project and our team will follow up shortly.</p>
+
+        <ul class="contact__details">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            <a href="mailto:contact@ignishun.com">contact@ignishun.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+            <a href="tel:+916386747596">+91 63867 47596</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Remote-first, serving clients worldwide</span>
+          </li>
+        </ul>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 13v4"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Web3Forms delivers submissions by email. The access key is public by design: it can only
+           send to the inbox it was registered with. Without JS the form still posts natively. -->
+      <form class="contact__form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="619081e1-73d0-49de-9057-5f3c0527499a">
+        <input type="hidden" name="subject" value="New enquiry from the Ignishun Tech website">
+        <input type="hidden" name="from_name" value="Ignishun Tech website">
+        <!-- Honeypot: bots tick it, people never see it; Web3Forms drops those submissions. -->
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" hidden>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="service">I'm interested in</label>
+          <select id="service" name="service" required>
+            <option>Web Design &amp; Development</option>
+            <option>Social Media Management</option>
+            <option>Digital Marketing &amp; Advertising</option>
+            <option>Influencer Marketing</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about your project" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="formSubmit">Send Message</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/ignilogo_dark.png" alt="Ignishun Tech" class="footer__logo">
+      <p>Your end-to-end digital growth partner: web, social, marketing and influencer campaigns, all under one roof.</p>
+    </div>
+    <div class="footer__links">
+      <h4>Explore</h4>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer__links">
+      <h4>Services</h4>
+      <a href="#services">Web Design &amp; Dev</a>
+      <a href="#services">Social Media</a>
+      <a href="#services">Digital Marketing</a>
+      <a href="#services">Influencer Marketing</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; <span id="year"></span> Ignishun Tech. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+

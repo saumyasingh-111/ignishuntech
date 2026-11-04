@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" width="300" height="320">
+  <circle cx="118" cy="70" r="14" fill="#17A2B8"/>
+  <rect x="106" y="100" width="24" height="140" rx="4" fill="#17A2B8"/>
+  <rect x="152" y="60" width="22" height="150" rx="4" fill="#A9A9AC"/>
+  <path d="M132 100 H206" stroke="#A9A9AC" stroke-width="22" stroke-linecap="round"/>
+  <path d="M174 190 v10 a30 30 0 0 0 30 30 h6" stroke="#A9A9AC" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <text x="150" y="300" text-anchor="middle" font-family="'Poppins', 'Segoe UI', sans-serif" font-weight="700" font-size="34" letter-spacing="2" fill="#3B2E2A">IGNISHUNTECH</text>
+</svg>
