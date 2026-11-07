@@ -1,16 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { TrustStrip } from './components/TrustStrip';
-import { Services } from './components/Services';
 import { About } from './components/About';
+import { Services } from './components/Services';
 import { Work } from './components/Work';
 import { Process } from './components/Process';
 import { WhyChooseUs } from './components/WhyChooseUs';
-import { TechStack } from './components/TechStack';
 import { Testimonials } from './components/Testimonials';
 import { Faq } from './components/Faq';
-import { CtaBand } from './components/CtaBand';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ArrowUp } from 'lucide-react';
@@ -20,7 +17,6 @@ export function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
-    // Scroll listener for floating Back-To-Top button
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
     };
@@ -30,8 +26,7 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    // IntersectionObserver for tracking current visible section
-    const sectionIds = ['home', 'services', 'about', 'work', 'process', 'why-us', 'contact'];
+    const sectionIds = ['home', 'about', 'services', 'work', 'approach', 'why-us', 'contact'];
     const observers: IntersectionObserver[] = [];
 
     sectionIds.forEach((id) => {
@@ -45,7 +40,7 @@ export function App() {
               }
             });
           },
-          { rootMargin: '-40% 0px -40% 0px' }
+          { rootMargin: '-30% 0px -40% 0px' }
         );
         observer.observe(element);
         observers.push(observer);
@@ -65,49 +60,40 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFBFD] text-[#0F172A] flex flex-col font-sans selection:bg-sky-100 selection:text-sky-900">
-      {/* Full-width sticky Navigation Bar */}
+    <div className="min-h-screen bg-[#FAFAF8] text-[#202B35] flex flex-col font-sans selection:bg-[#E8F1F7] selection:text-[#202B35]">
+      {/* Full-width elegant Navigation Bar */}
       <Navbar activeSection={activeSection} />
 
       <main className="flex-1">
-        {/* Complete Hero Section Redesign */}
+        {/* Editorial Centered Hero with spacious composition */}
         <Hero />
 
-        {/* Agency Capabilities Strip */}
-        <TrustStrip />
-
-        {/* Services — Complete Preserved Scope */}
-        <Services />
-
-        {/* Professional About Section */}
+        {/* Narrative About Section: Zero vendor fragmentation */}
         <About />
 
-        {/* Real Projects & Case Studies */}
+        {/* Minimal Editorial Services Directory with in-place deliverables */}
+        <Services />
+
+        {/* Alternating Case Studies with real results */}
         <Work />
 
-        {/* 4-Step Disciplined Process */}
+        {/* Numbered 4-Step Approach */}
         <Process />
 
-        {/* The Ignishun Advantage: Unified vs Fragmented */}
+        {/* The Ignishun Model Comparison */}
         <WhyChooseUs />
 
-        {/* Technology & Capabilities */}
-        <TechStack />
-
-        {/* Verifiable Testimonials */}
+        {/* Large Editorial Testimonials */}
         <Testimonials />
 
-        {/* Frequently Asked Questions */}
+        {/* Good Questions / FAQ */}
         <Faq />
 
-        {/* High-Impact Mid-Page CTA */}
-        <CtaBand />
-
-        {/* Professional Scoping & Enquiry Contact */}
+        {/* Clean, Airy Contact & Scoping Form */}
         <Contact />
       </main>
 
-      {/* Corporate Minimal Footer */}
+      {/* Quiet Corporate Footer */}
       <Footer />
 
       {/* Floating Back to Top Button */}
@@ -115,9 +101,9 @@ export function App() {
         <button
           onClick={scrollToTop}
           aria-label="Scroll back to top"
-          className="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-[#0B192C] text-white shadow-lg hover:bg-sky-700 active:scale-95 transition-all duration-200 cursor-pointer focus-ring"
+          className="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-[#202B35] text-white shadow-md hover:bg-[#151D24] active:scale-95 transition-all duration-200 cursor-pointer focus-ring"
         >
-          <ArrowUp className="w-5 h-5 text-sky-200" />
+          <ArrowUp className="w-4 h-4 text-white/80" />
         </button>
       )}
     </div>

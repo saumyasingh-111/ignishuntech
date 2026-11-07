@@ -1,226 +1,141 @@
 import React from 'react';
-import { ArrowRight, CheckCircle2, Layers, Code, Megaphone, Users, Sparkles, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative pt-32 pb-20 md:pt-36 md:pb-28 lg:pt-40 lg:pb-32 overflow-hidden bg-gradient-to-b from-[#FAFBFD] via-[#FAFBFD] to-[#F0F6FA]/50"
+      className="relative pt-36 pb-20 md:pt-44 md:pb-28 lg:pt-48 lg:pb-36 bg-[#FAFAF8] overflow-hidden"
     >
-      {/* Subtle background geometry - restrained, low-opacity corporate pattern */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.035]"
-        style={{
-          backgroundImage: `radial-gradient(#0B192C 1px, transparent 1px)`,
-          backgroundSize: '32px 32px',
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="w-full px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="w-full px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
+        
+        {/* Centered Editorial Composition */}
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           
-          {/* Left Content Column */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left">
-            
-            {/* Eyebrow Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200/70 text-sky-800 text-xs font-semibold tracking-wide mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-sky-600 animate-pulse" />
-              <span>Full-Service Digital Growth Agency</span>
-            </div>
-
-            {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#0B192C] leading-[1.12] mb-6">
-              We build brands that{' '}
-              <span className="text-[#0284C7] underline decoration-sky-200 decoration-wavy decoration-2 underline-offset-8">
-                command attention
-              </span>{' '}
-              and drive growth.
-            </h1>
-
-            {/* Supporting Copy */}
-            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mb-8">
-              From custom web applications to targeted digital advertising, organic social growth,
-              and creator partnerships — <strong className="text-[#0B192C] font-semibold">Ignishun Tech</strong>{' '}
-              manages your entire online presence under one roof with zero hand-off friction.
-            </p>
-
-            {/* Actions / CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-12">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-base font-semibold text-white bg-[#0B192C] hover:bg-sky-700 active:bg-sky-800 rounded-lg shadow-sm hover:shadow transition-all duration-200 focus-ring group"
-              >
-                <span>Start Your Project</span>
-                <ArrowRight className="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" />
-              </a>
-
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200/80 rounded-lg shadow-2xs hover:border-slate-300 transition-all duration-200 focus-ring"
-              >
-                <span>Explore Capabilities</span>
-              </a>
-            </div>
-
-            {/* Core Value Commitments */}
-            <div className="pt-8 border-t border-slate-200/70 w-full grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-sm font-bold text-[#0B192C]">Single Agency</div>
-                  <div className="text-xs text-slate-500">Zero vendor fragmentation</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-sm font-bold text-[#0B192C]">Full-Funnel Scope</div>
-                  <div className="text-xs text-slate-500">Design, code & media</div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-sm font-bold text-[#0B192C]">Remote-First</div>
-                  <div className="text-xs text-slate-500">Serving clients globally</div>
-                </div>
-              </div>
-            </div>
-
+          {/* Eyebrow */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3F5F6] border border-[#E8EAEC] text-[#687580] text-xs font-medium tracking-wide mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#526F87]" />
+            <span>Digital Growth &amp; Technology Studio</span>
           </div>
 
-          {/* Right Column: Clean Architectural Agency Operational Blueprint */}
-          <div className="lg:col-span-5">
-            <div className="relative">
-              {/* Subtle background glow */}
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-sky-100 to-slate-100 opacity-60 blur-xs" />
+          {/* Large, Expressive Editorial Headline */}
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-normal tracking-tight text-[#202B35] leading-[1.08] mb-8">
+            We build brands that{' '}
+            <span className="font-editorial italic font-normal text-[#526F87]">
+              command attention
+            </span>{' '}
+            and scale with precision.
+          </h1>
 
-              {/* Main Card */}
-              <div className="relative rounded-2xl bg-white border border-slate-200 shadow-sm p-6 sm:p-7">
-                
-                {/* Header */}
-                <div className="flex items-center justify-between pb-5 border-b border-slate-100 mb-5">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center">
-                      <Layers className="w-4 h-4 text-sky-600" />
-                    </div>
-                    <div>
-                      <div className="text-xs uppercase tracking-wider font-bold text-slate-400">
-                        Ignishun Delivery Model
-                      </div>
-                      <div className="text-sm font-bold text-[#0B192C]">
-                        Unified Digital Engine
-                      </div>
-                    </div>
-                  </div>
-                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200/60">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                    Active Sync
-                  </span>
-                </div>
+          {/* Calm, readable supporting paragraph */}
+          <p className="text-base sm:text-lg md:text-xl text-[#687580] font-normal leading-relaxed max-w-2xl mb-10">
+            Custom web engineering, performance acquisition, social media, and creator
+            partnerships. Ignishun Tech unifies your entire digital presence under one roof with zero
+            vendor hand-offs.
+          </p>
 
-                {/* 4 Pillars Grid */}
-                <div className="space-y-3">
-                  
-                  {/* Pillar 1: Web & Dev */}
-                  <div className="p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/60 hover:border-sky-200 hover:bg-sky-50/30 transition-colors">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-sky-600 shrink-0">
-                          <Code className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <div className="text-sm font-semibold text-[#0B192C]">
-                            Web Design & Development
-                          </div>
-                          <div className="text-xs text-slate-500">
-                            Fast, responsive, conversion-focused websites
-                          </div>
-                        </div>
-                      </div>
-                      <span className="text-[11px] font-medium text-slate-400">01</span>
-                    </div>
-                  </div>
+          {/* Minimal CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-16">
+            <a
+              href="#contact"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-semibold bg-[#202B35] text-white hover:bg-[#151D24] transition-all duration-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)] group focus-ring"
+            >
+              <span>Start Your Project</span>
+              <ArrowRight className="w-4 h-4 text-white/70 transition-transform group-hover:translate-x-1" />
+            </a>
 
-                  {/* Pillar 2: Paid Acquisition */}
-                  <div className="p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/60 hover:border-sky-200 hover:bg-sky-50/30 transition-colors">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-sky-600 shrink-0">
-                          <Megaphone className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <div className="text-sm font-semibold text-[#0B192C]">
-                            Digital Marketing & Paid Ads
-                          </div>
-                          <div className="text-xs text-slate-500">
-                            Search, Meta & video performance funnels
-                          </div>
-                        </div>
-                      </div>
-                      <span className="text-[11px] font-medium text-slate-400">02</span>
-                    </div>
-                  </div>
-
-                  {/* Pillar 3: Social & Content */}
-                  <div className="p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/60 hover:border-sky-200 hover:bg-sky-50/30 transition-colors">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-sky-600 shrink-0">
-                          <Sparkles className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <div className="text-sm font-semibold text-[#0B192C]">
-                            Social Media Management
-                          </div>
-                          <div className="text-xs text-slate-500">
-                            Daily publishing & community engagement
-                          </div>
-                        </div>
-                      </div>
-                      <span className="text-[11px] font-medium text-slate-400">03</span>
-                    </div>
-                  </div>
-
-                  {/* Pillar 4: Influencer & Creators */}
-                  <div className="p-3.5 rounded-xl bg-slate-50/80 border border-slate-200/60 hover:border-sky-200 hover:bg-sky-50/30 transition-colors">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-sky-600 shrink-0">
-                          <Users className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <div className="text-sm font-semibold text-[#0B192C]">
-                            Influencer & Creator Marketing
-                          </div>
-                          <div className="text-xs text-slate-500">
-                            Vetted partnerships for authentic brand reach
-                          </div>
-                        </div>
-                      </div>
-                      <span className="text-[11px] font-medium text-slate-400">04</span>
-                    </div>
-                  </div>
-
-                </div>
-
-                {/* Footer guarantee bar */}
-                <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-                  <div className="flex items-center gap-1.5">
-                    <ShieldCheck className="w-4 h-4 text-sky-600" />
-                    <span>Single accountable agency</span>
-                  </div>
-                  <span className="font-semibold text-slate-700">100% End-to-End</span>
-                </div>
-
-              </div>
-            </div>
+            <a
+              href="#services"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium text-[#202B35] bg-white border border-[#E8EAEC] hover:bg-[#F3F5F6] hover:border-[#D0D4D8] transition-all duration-200 focus-ring"
+            >
+              <span>Explore Services</span>
+            </a>
           </div>
 
         </div>
+
+        {/* Minimal Editorial Canvas: Wispr Flow Inspired Showcase */}
+        <div className="mt-4 max-w-5xl mx-auto">
+          <div className="relative rounded-3xl bg-[#F3F5F6] border border-[#E8EAEC] p-8 sm:p-12 lg:p-14 overflow-hidden">
+            
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#E8EAEC]">
+              <div>
+                <span className="text-xs uppercase tracking-widest font-semibold text-[#687580] block mb-2">
+                  The Ignishun Operating Model
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-normal text-[#202B35] tracking-tight">
+                  One agency. Every channel.{' '}
+                  <span className="font-editorial italic text-[#526F87]">Zero friction.</span>
+                </h2>
+              </div>
+
+              <div className="text-xs text-[#687580] max-w-xs">
+                Designers, software engineers, and media strategists collaborating in direct sync.
+              </div>
+            </div>
+
+            {/* 3 Core Pillars in Clean Editorial Layout */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
+              
+              <div className="flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-mono text-[#526F87] font-semibold mb-3 block">01 / ENGINEERING</span>
+                  <h3 className="text-lg font-medium text-[#202B35] mb-2">Code that converts</h3>
+                  <p className="text-xs text-[#687580] leading-relaxed">
+                    Custom web applications and headless storefronts built for sub-second speeds, flawless responsiveness, and maximum lead capture.
+                  </p>
+                </div>
+                <div className="pt-4 mt-6 border-t border-[#E8EAEC]/70 text-[11px] font-medium text-[#202B35]">
+                  React • TypeScript • Headless Web
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-mono text-[#526F87] font-semibold mb-3 block">02 / ACQUISITION</span>
+                  <h3 className="text-lg font-medium text-[#202B35] mb-2">Demand that scales</h3>
+                  <p className="text-xs text-[#687580] leading-relaxed">
+                    Data-driven Google search, Meta ad funnels, and creator campaigns engineered to reduce customer acquisition costs and drive real pipeline.
+                  </p>
+                </div>
+                <div className="pt-4 mt-6 border-t border-[#E8EAEC]/70 text-[11px] font-medium text-[#202B35]">
+                  Paid Media • Funnels • Analytics
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-between">
+                <div>
+                  <span className="text-xs font-mono text-[#526F87] font-semibold mb-3 block">03 / BRAND &amp; SOCIAL</span>
+                  <h3 className="text-lg font-medium text-[#202B35] mb-2">Equity that compounds</h3>
+                  <p className="text-xs text-[#687580] leading-relaxed">
+                    Consistent editorial calendars, high-craft brand design, and community management that turns passive viewers into loyal advocates.
+                  </p>
+                </div>
+                <div className="pt-4 mt-6 border-t border-[#E8EAEC]/70 text-[11px] font-medium text-[#202B35]">
+                  Brand Systems • Content • Community
+                </div>
+              </div>
+
+            </div>
+
+            {/* Quiet Footer Bar */}
+            <div className="mt-12 pt-6 border-t border-[#E8EAEC] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#687580]">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                <span>Remote-first • Collaborating with ambitious teams globally</span>
+              </div>
+              <a
+                href="#about"
+                className="inline-flex items-center gap-1 font-medium text-[#202B35] hover:text-[#526F87] transition-colors"
+              >
+                <span>Read our story</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
   );

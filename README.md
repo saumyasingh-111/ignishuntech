@@ -1,101 +1,92 @@
-# Ignishun Tech — Complete Website Rebuild
+# Ignishun Tech — Minimal Editorial Website Rebuild
 
-A brand-new, premium, minimal corporate web application for **Ignishun Tech & Services**, reimagined from scratch.
+A complete redesign and redevelopment of **Ignishun Tech & Services**, inspired by the minimal, chic, light-theme aesthetic of **Wispr Flow** ([wisprflow.ai](https://wisprflow.ai/)).
 
 Built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Lucide React**.
 
 ---
 
-## 🎨 Visual Identity & Design System
+## 🎨 Visual Identity & Design Philosophy
 
-- **Design Philosophy**: Minimal, sophisticated, human-crafted corporate design. Understated elegance with generous whitespace, clear typographic hierarchy, and zero AI-generated visual clutter.
-- **Color Palette**:
-  - **Primary Background**: Warm Off-White (`#FAFBFD`)
-  - **Secondary / Card Background**: Ice Blue (`#F0F6FA` / `#FFFFFF`)
-  - **Primary Typography**: Deep Navy (`#0B192C` / `#0F172A`)
-  - **Secondary Typography**: Muted Slate (`#475569` / `#64748B`)
-  - **Accent**: Restrained Brand Sky Blue (`#0284C7`)
-  - **Borders**: Neutral Slate (`#E2E8F0`)
-- **Typography**: Plus Jakarta Sans paired with Inter.
+Inspired by the uncrowded, editorial simplicity of Wispr Flow:
+
+- **Reduced Visual Weight**: Zero heavy cards, zero neon gradients, zero artificial 3D objects, zero fake dashboards or graphs.
+- **Generous Whitespace**: Unhurried section pacing (`py-24 sm:py-32 lg:py-40`) with wide margins and breathable layouts.
+- **Editorial Typography**: Pairing **Figtree** (modern, clean, geometric sans-serif) with **Newsreader** (delicate, refined editorial serif for expressive headline accents).
+- **Wispr Flow-Inspired Color Palette**:
+  - **Primary Background**: Warm off-white / light ivory (`#FAFAF8`)
+  - **Secondary Background**: Soft muted grey-cream (`#F3F5F6`)
+  - **Primary Text**: Deep charcoal (`#202B35`)
+  - **Secondary Text**: Muted slate / blue-grey (`#687580`)
+  - **Accent**: Calm, understated blue (`#526F87`)
+  - **Borders**: Hairline neutral borders (`#E8EAEC`)
+  - **Surface White**: Crisp white (`#FFFFFF`)
 
 ---
 
-## 🚀 Key Sections & Architecture
+## 🏛️ Section Architecture & Layouts
 
-1. **Prominent Full-Width Navbar**:
-   - Spans full screen width with generous horizontal padding.
-   - Prominently showcases the original **Ignishun Tech** vector logo mark and bold corporate wordmark.
-   - Smooth navigation links with active section indicator: Home, Services, About, Work, Process, Why Us, Contact.
+1. **Spacious Full-Width Navbar**:
+   - Full screen width with generous horizontal padding (`px-6 sm:px-10 lg:px-16`).
+   - Significantly enlarged, prominent Ignishun Tech logo mark and bold wordmark.
+   - Minimal navigation links: About, Services, Work, Approach, Why Ignishun, Contact.
+   - Clean pill CTA button: *Let's Talk*.
    - Responsive mobile navigation drawer with backdrop blur.
 
-2. **Hero Section (Complete Redesign)**:
-   - Replaced old live SVG charts, fake dashboards, and glowing dark backgrounds with a commanding, minimal agency layout.
-   - Direct value proposition: *"We build brands that command attention and drive growth."*
-   - Interactive **Agency Delivery Model** architectural blueprint illustrating synchronized multi-channel execution.
+2. **Editorial Hero Section**:
+   - Centered composition with large expressive headline:
+     *"We build brands that command attention and scale with precision."*
+   - Clear, concise supporting paragraph and minimal pill action buttons.
+   - Minimal 3-pillar Operating Model canvas (*Code that converts*, *Demand that scales*, *Equity that compounds*) with zero fake charts or floating cards.
 
-3. **Agency Capabilities Ticker**:
-   - Clean horizontal pill strip highlighting core competencies: Custom Web Engineering, Performance Marketing, Social Media, Influencer Networks, Brand Identity, and SEO.
+3. **Narrative About Section**:
+   - Large editorial headline addressing vendor fragmentation: *"Growing a brand online shouldn't mean managing five separate agencies."*
+   - 4 minimal numbered principles with hairline dividers.
 
-4. **About Ignishun Tech**:
-   - *"One agency. Every channel. Zero hand-offs."*
-   - Core company philosophy addressing vendor fragmentation.
-   - 4 strategic pillars: Dedicated Cross-Functional Team, Transparent Commercial Reporting, Flexible Engagement Framework, and Single Point of Accountability.
-
-5. **Services (Full Business Scope Preserved)**:
-   - Preserves all 6 core business offerings:
+4. **Editorial Services Directory**:
+   - Replaced repetitive heavy cards with a hairline horizontal directory.
+   - Complete preservation of all 6 core services:
      1. Web Design & Development
      2. Social Media Management
      3. Digital Marketing & Advertising
      4. Influencer & Creator Marketing
      5. Branding & Creative Identity
      6. SEO & Content Strategy
-   - Includes an interactive **Deliverables & Scope Modal** allowing prospective clients to inspect exact technical outputs, target outcomes, and ideal client profiles.
+   - In-place expandable deliverables and commercial business value.
 
-6. **Selected Work & Case Studies**:
-   - Filterable project showcases:
-     - E-Commerce Platform Re-engineering
-     - Multi-Channel Social Presence & Content Engine
-     - Cross-Platform Performance Advertising Rollout
-     - Coordinated Creator Partnership Product Launch
+5. **Selected Work & Case Studies**:
+   - Alternating editorial showcases with real client project photography, quiet metrics, and clean typography.
 
-7. **Our Working Process**:
-   - 4-step structured methodology: **01 Discover**, **02 Strategy**, **03 Execute**, **04 Grow**.
+6. **Disciplined Approach / Process**:
+   - Clean 4-step sequence: **01 Discover & Align**, **02 Strategy & Roadmap**, **03 Execute & Launch**, **04 Optimize & Compound**.
 
-8. **Why Choose Ignishun Tech**:
-   - Direct comparison: *Traditional Fragmented Approach* vs. *The Ignishun Tech Unified Model*.
+7. **The Ignishun Model Comparison**:
+   - Side-by-side editorial comparison table (Fragmented Model vs Ignishun Unified Model).
 
-9. **Technology & Capabilities**:
-   - Detailed breakdown of engineering stacks, ad networks, tracking infrastructure, and creative tools.
+8. **Large Editorial Testimonials**:
+   - Large quotation format featuring genuine client quotes (Aisha Verma, Rohan Malhotra, Sara Khan).
 
-10. **Client Testimonials**:
-    - Verifiable testimonials from actual clients (Aisha Verma, Rohan Malhotra, Sara Khan).
+9. **Good Questions / FAQ**:
+   - Hairline accordion addressing engagement models, timelines, reporting, and remote operations.
 
-11. **Frequently Asked Questions**:
-    - Interactive accordion addressing engagement models, timelines, reporting, and remote operations.
+10. **Clean, Frictionless Contact Section**:
+    - Real contact details: `contact@ignishun.com`, `+91 63867 47596`, remote-first global operations.
+    - Functional Web3Forms integration (`619081e1-73d0-49de-9057-5f3c0527499a`) with validation and instant feedback states.
 
-12. **High-Converting Contact & Consultation**:
-    - Direct contact details: `contact@ignishun.com`, `+91 63867 47596`, remote-first global operations.
-    - Fully functional Web3Forms form with client-side validation, error handling, and instant success confirmation.
-
-13. **Corporate Minimal Footer**:
-    - Prominent branding, sitemap directory, contact info, and smooth back-to-top button.
+11. **Quiet Corporate Footer**:
+    - Prominent Ignishun Tech branding, navigation links, services directory, and smooth scroll-to-top control.
 
 ---
 
 ## 🛠️ Development & Build
 
-### Development Server
 ```bash
-npm install
+# Start development server
 npm run dev
-```
 
-### Production Build
-```bash
-npm run build
-```
-
-### Linting
-```bash
+# Run linter
 npm run lint
+
+# Production build
+npm run build
 ```

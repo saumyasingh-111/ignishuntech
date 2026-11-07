@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 
 interface FaqItem {
   question: string;
@@ -13,27 +13,27 @@ export const Faq: React.FC = () => {
     {
       question: 'How does the single point of contact model work?',
       answer:
-        'When you partner with Ignishun Tech, you are assigned a dedicated project lead who understands both technical engineering and commercial marketing. You never have to repeat yourself or mediate between separate developers, designers, or ad managers. Your lead orchestrates the entire cross-disciplinary team and provides clear, unified progress updates.',
+        'When you partner with Ignishun Tech, you are paired with a dedicated project lead who understands both software engineering and growth marketing. You never have to referee between separate developers, designers, or ad managers. Your lead orchestrates the entire cross-disciplinary team and provides clear, unified progress updates.',
     },
     {
       question: 'Can we hire Ignishun Tech for web development only, or do we need marketing too?',
       answer:
-        'You can engage us for individual services or our full-service suite. Many clients start with a flagship website redesign or technical build, and subsequently expand into ongoing paid advertising and social media management once their digital foundation is established.',
+        'You can engage us for individual services or our full-service suite. Many clients start with a flagship website rebuild or technical build, and subsequently expand into ongoing paid advertising and social media management once their digital foundation is established.',
     },
     {
-      question: 'What is the typical timeline for a web design and development project?',
+      question: 'What is the typical timeline for a web design and engineering project?',
       answer:
         'Depending on complexity, a bespoke brand website typically requires 3 to 6 weeks from initial discovery through design approval, frontend development, content population, and launch. Custom e-commerce platforms or web applications with extensive integrations may take 6 to 10 weeks with structured milestone deliverables.',
     },
     {
       question: 'How do you measure and report marketing campaign performance?',
       answer:
-        'We report on commercial business metrics rather than vanity metrics. You receive weekly/monthly performance summaries detailing cost per acquisition (CAC), conversion rates, qualified lead volume, return on ad spend (ROAS), and organic reach growth. We maintain complete transparency with shared dashboard access.',
+        'We report on commercial business metrics rather than vanity impressions. You receive weekly performance summaries detailing cost per acquisition (CAC), conversion rates, qualified lead volume, return on ad spend (ROAS), and organic reach growth. We maintain complete transparency with direct access.',
     },
     {
       question: 'How do you select influencers and creators for campaigns?',
       answer:
-        'We screen creators using rigorous data vetting: audience authenticity, engagement health, audience demographic alignment, and previous sponsored performance. We handle contract negotiations, rate benchmarks, product seeding, creative briefs, and conversion tracking.',
+        'We screen creators using rigorous data vetting: audience authenticity, engagement health, demographic alignment, and previous sponsored performance. We handle contract negotiations, rate benchmarks, product seeding, creative briefs, and conversion tracking.',
     },
     {
       question: 'Where is Ignishun Tech based, and how do you handle remote communication?',
@@ -43,48 +43,43 @@ export const Faq: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-[#F0F6FA]/50 border-t border-slate-200/70">
+    <section className="py-24 sm:py-32 lg:py-40 bg-[#FAFAF8] border-t border-[#E8EAEC]">
       <div className="w-full px-6 sm:px-10 lg:px-16 max-w-4xl mx-auto">
         
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-sky-50 border border-sky-200/60 text-sky-800 text-xs font-semibold uppercase tracking-wider mb-3">
-            Common Inquiries
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0B192C] leading-tight mb-4">
-            Frequently Asked Questions
+        <div className="mb-16">
+          <span className="text-xs uppercase tracking-widest font-semibold text-[#687580] block mb-3">
+            Inquiries
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-normal text-[#202B35] tracking-tight leading-[1.14]">
+            Good questions.{' '}
+            <span className="font-editorial italic text-[#526F87]">
+              Clear answers.
+            </span>
           </h2>
-          <p className="text-sm sm:text-base text-slate-600">
-            Everything you need to know about partnering with Ignishun Tech for design, code, and growth.
-          </p>
         </div>
 
-        {/* Accordion */}
-        <div className="space-y-3.5">
+        {/* Minimal Accordion with Hairline Dividers (Zero bulky cards) */}
+        <div className="border-t border-[#E8EAEC] divide-y divide-[#E8EAEC]">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div
-                key={faq.question}
-                className="bg-white rounded-xl border border-slate-200 shadow-2xs overflow-hidden transition-colors"
-              >
+              <div key={faq.question} className="py-6 sm:py-8">
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 cursor-pointer focus-ring"
+                  className="w-full text-left flex items-start justify-between gap-6 cursor-pointer focus-ring group"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base font-bold text-[#0B192C]">
+                  <span className="text-lg sm:text-xl font-normal text-[#202B35] group-hover:text-[#526F87] transition-colors leading-snug">
                     {faq.question}
                   </span>
-                  <ChevronDown
-                    className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-sky-700' : ''
-                    }`}
-                  />
+                  <div className="w-7 h-7 rounded-full border border-[#E8EAEC] bg-[#F3F5F6] flex items-center justify-center text-[#202B35] group-hover:border-[#526F87] group-hover:text-[#526F87] transition-colors shrink-0 mt-0.5">
+                    {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
+                  </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                  <div className="pt-4 pr-12 text-sm sm:text-base text-[#687580] leading-relaxed">
                     {faq.answer}
                   </div>
                 )}
